@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4,#fbc2eb,#a6c1ee);
+    background-size:400% 400%;
+    animation:gradientBG 12s ease infinite;
+    height:100vh;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:400px;
+    margin:auto;
+    margin-top:120px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    color:#6a11cb;
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+
+button{
+    width:95%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#ff758c,#ff7eb3);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+a{
+    text-decoration:none;
+    color:#6a11cb;
+}
+
+.dashboard{
+    text-align:center;
+    padding-top:80px;
+}
+
+.card{
+    display:inline-block;
+    width:250px;
+    margin:20px;
+    padding:30px;
+    border-radius:20px;
+    background:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+a[href="/logout"]:hover {
+    transform: scale(1.08);
+}
